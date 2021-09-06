@@ -1,0 +1,32 @@
+<!-- new stuff in angular lesson 2 -->
+<!-- ngValue -->
+<!-- ngOnit() -->
+<!-- *ngIf -->
+<!-- binding html attributes -->
+<!-- cloning -->
+<!-- spread operator ... -->
+
+<!-- create the add car -->
+<h3>Create Car</h3>
+
+<label>Name: </label>
+<input [(ngModel)]="newCar.name" type="text" />
+
+<br>
+
+<label>Image: </label>
+<input [(ngModel)]="newCar.imgUrl" type="text" />
+
+<br>
+<button (click)="createCar()">Create Car</button>
+
+<br>
+<br>
+<select [(ngModel)]="selectedCar">
+  <option *ngFor="let car of carList" [ngValue]="car">{{ car.name }}</option>
+</select>
+
+<button (click)="showView()">View Car</button>
+<button>Edit Car</button>
+
+<app-view-car *ngIf="isShowView === true" [selectedCar]="selectedCar" (closeEvent)="hideView()"></app-view-car>
