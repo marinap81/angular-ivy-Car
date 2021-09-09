@@ -6,7 +6,7 @@
 <!-- cloning -->
 <!-- spread operator ... -->
 
-<!-- create the add car -->
+<!-- create the add car 
 <h3>Create Car</h3>
 
 <label>Name: </label>
@@ -18,15 +18,16 @@
 <input [(ngModel)]="newCar.imgUrl" type="text" />
 
 <br>
-<button (click)="createCar()">Create Car</button>
-
+<button (click)="createCar()">Create Car</button> 
+-->
 <br>
 <br>
 <select [(ngModel)]="selectedCar">
   <option *ngFor="let car of carList" [ngValue]="car">{{ car.name }}</option>
 </select>
 
-<button (click)="showView()">View Car</button>
+<!--<button (click)="showView()">View Car</button>
 <button>Edit Car</button>
 
-<app-view-car *ngIf="isShowView === true" [selectedCar]="selectedCar" (closeEvent)="hideView()"></app-view-car>
+ <app-view-car *ngIf="isShowView === true" [selectedCar]="selectedCar" (closeEvent)="hideView()"></app-view-car> this section triggers photo of car to show along with closing the photo
+  -->

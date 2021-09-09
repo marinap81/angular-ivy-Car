@@ -23,14 +23,14 @@ export class AppComponent implements OnInit {
   // https://i.ebayimg.com/images/g/sEoAAOSwdFZcgbmk/s-l500.jpg -> flo's car image
 
   selectedCar: Car;
-  isShowView: boolean = false;
-  newCar: Car = { name: '', imgUrl: '' };
+  //isShowView: boolean = false;
+  //newCar: Car = { name: '', imgUrl: '' };
 
   ngOnInit() {
-    this.selectedCar = this.carList[1];
+    this.selectedCar = this.carList[0];
   }
 
-  showView() {
+   /* showView() {
     this.isShowView = true;
   }
 
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   createCar() {
     // this.carList.push(this.newCar); -> original
     this.carList.push({ ...this.newCar });
-  }
+  } */
 }
 
 /*
